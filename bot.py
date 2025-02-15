@@ -4,18 +4,20 @@ import random
 from telethon import TelegramClient
 
 # Данные первого аккаунта
-API_ID_1 = int(os.getenv("API_ID_1"))  # API ID первого аккаунта
-API_HASH_1 = os.getenv("API_HASH_1")  # API Hash первого аккаунта
+API_ID_1 = int(os.getenv("26798194"))  # API ID первого аккаунта
+API_HASH_1 = os.getenv("e25966f22777314f519b79e6c786254e")  # API Hash первого аккаунта
 
 # Данные второго аккаунта
-API_ID_2 = int(os.getenv("API_ID_2"))  # API ID второго аккаунта
-API_HASH_2 = os.getenv("API_HASH_2")  # API Hash второго аккаунта
+API_ID_2 = int(os.getenv("20933274"))  # API ID второго аккаунта
+API_HASH_2 = os.getenv("88e1b6cdc776a740c82b998e155b5843")  # API Hash второго аккаунта
 
 # ID группы, из которой берем участников
-GROUP_ID = os.getenv("GROUP_ID")  # ID группы
+GROUP_ID = os.getenv("https://t.me/Rabota_Ekaterinburgs")  # ID группы
 
 # Сообщения для отправки (разделены "|")
-MESSAGE_TEXTS = os.getenv("MESSAGE_TEXTS", "Привет!|Как дела?|Рад знакомству!").split("|")
+# MESSAGE_TEXTS = os.getenv("MESSAGE_TEXTS", "Привет! нужны люди на такие вакансии как курьер, кассир, клинер.|Добрый день! Мы сейчас в поисках людей на такие вакансии 
+как сборщик заказов кладовщик, водитель натегории Е. Интересует работа в вашем городе?|Здравствуйте! Мы сейчас ищем людей на такие должности как доставщик, оператор call центра,
+клинер! Интересует вас работа в вашем городе?").split("|")
 
 # Создаем клиентов для двух аккаунтов
 client1 = TelegramClient('session_1', API_ID_1, API_HASH_1)
